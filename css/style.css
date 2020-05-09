@@ -1,0 +1,290 @@
+/*Golbal css*/
+body{
+	font-family: 'Raleway', sans-serif;
+}
+p{
+	margin-bottom: 0;
+}
+
+/*header section start*/
+
+header{
+	background: url(../img/banner-bg.png);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+.navbar{
+	padding: 20px 0;
+	border-bottom: 1px solid rgba(255,255,255, 0.25);
+}
+.navbar .nav-item{
+	margin: 0 5px;
+}
+.navbar .nav-item .nav-link{
+	color: #fff;
+	padding: 8px 20px;
+	text-transform: uppercase;
+	position: relative;
+}
+.navbar .nav-item .nav-link::after{
+	content: "";
+	position: absolute;
+	background: #e84545;
+	width: 0;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	transition: 0.4s linear;
+}
+.navbar .nav-item .nav-link:hover::after{
+	width: 48%;
+}
+
+.navbar .nav-item .nav-link::before{
+	content: "";
+	position: absolute;
+	background: #e84545;
+	width: 0;
+	height: 2px;
+	right: 0;
+	bottom: 0;
+	transition: 0.4s linear;
+}
+.navbar .nav-item .nav-link:hover::before{
+	width: 48%;
+}
+
+
+.navbar .nav-item.active .nav-link{
+	color: #e84545;
+}
+.navbar .nav-item.active .nav-link::after{
+	content: "";
+	position: absolute;
+	background: #e84545;
+	width: 48%;
+	height: 2px;
+	left: 0;
+	bottom: 0;
+	transition: 0.4s linear;
+}
+.navbar .nav-item.active .nav-link::before{
+	content: "";
+	position: absolute;
+	background: #e84545;
+	width: 48%;
+	height: 2px;
+	right: 0;
+	bottom: 0;
+	transition: 0.4s linear;
+}
+.navbar .nav-item .nav-link:hover{
+	color: #e84545;
+}
+
+/*banner content area css*/
+
+.banner_content_area{
+	text-align: center;
+	color: #fff;
+	margin-top: 250px;
+}
+.banner_content_area h1{
+	font-family: "Open Sans", "sans-serif";
+	font-size: 65px;
+	font-weight: 700;
+	padding: 0 8%;
+	margin-bottom: 30px;
+}
+.banner_content_area p{
+	padding: 0 20%;
+	line-height: 1.7;
+	margin-bottom: 50px;
+}
+.banner_content_area .btn-cta{
+	color: #fff;
+	background-color: #e84545;
+	border: 1px solid #e84545;
+	padding: 7px 40px;
+	border-radius: 3px; 
+}
+.banner_content_area .btn-cta:hover{
+	background-color: #bd2525; 
+	border:1px solid #bd2525; 
+}
+
+
+/*servise section css*/
+
+.servise {
+	padding: 50px 0;
+}
+.servise .box {
+	text-align: center;
+	margin: 30px 0;
+}
+.servise .box img {
+	margin-bottom: 25px;
+}
+.servise .box h3 {
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.servise .box p {}
+
+
+/*gallery item css*/
+
+.gallery {
+	padding: 80px 0;
+}
+.gallery .gallery_item{
+	position: relative;
+	overflow: hidden;
+}
+.gallery .gallery_item img{
+	transition: all 0.3s;
+}
+.gallery .gallery_item:hover img{
+	transform: scale(1.2);
+}
+.gallery .hover_box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(200,60,60,0.8);
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.gallery .hover_box:hover{
+	opacity: 1;
+}
+.gallery .hover_box h5 {
+	font-weight: 700;
+	transition: all 0.5s;
+	margin-top: 130px;
+	transition: all 0.5s;
+	transform: translateY(-500%);
+}
+
+.gallery .hover_box p {
+	transition: all 0.5s;
+	transform: translateY(500%);
+}
+.gallery .gallery_item:hover .hover_box h5{
+	transform: translateY(0%);
+}
+.gallery .gallery_item:hover .hover_box p{
+	transform: translateY(0%);
+}
+/*team css*/
+
+.team{
+	padding: 80px 0;
+}
+.team .team-box{}
+.team .team-box img{}
+.team .team-box h3{}
+.team .team-box h5{
+	color: #e84545;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+.team .team-box p{
+	margin-bottom: 20px;
+}
+.team .team-box .nav-item{
+	border: 1px solid #ccc;
+	margin-right: 5px;
+	border-radius: 3px;
+	transition: all 0.5s;
+}
+.team .team-box .nav-item .nav-link{
+	color: #ccc;
+}
+.team .team-box .nav-item:hover{
+	border: 1px solid #e84545;
+	background: #e84545;
+}
+.team .team-box .nav-item:hover .nav-link{
+	color: #ccc;
+}
+
+/*download css*/
+
+.download{}
+.download .btn-custom{
+	background: #e84545;
+	border-color: #e84545;
+	padding: 7px 50px;
+	border-radius: 3px; 
+	margin-bottom: 40px;
+}
+.download .btn-custom:hover{
+	background: #ff0000;
+	border-color: #ff0000;
+}
+
+/*footer-section*/
+
+
+footer{
+    padding: 50px 0;
+    background: #3a3e64;
+}
+
+footer .box{
+    color: #fff;
+    text-align: center;
+}
+
+footer .box h5{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+footer .box p{
+    line-height: 1.7;
+    font-size: 14px;
+    color: #ccc;
+}
+
+
+footer .box .nav{}
+
+footer .box .nav .nav-item{
+    border: 1px solid #fff;
+    margin: 0 5px;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+footer .box .nav .nav-item .nav-link{
+    color: #fff;
+    transition: all 0.5s;
+}
+
+footer .box .nav .nav-item:hover{
+    background: #e84545;
+    border: 1px solid #e84545;
+
+}
+
+
+/*Bottom Footer CSS*/
+
+.bottom-footer{
+    padding: 25px 0;
+    background: #313454;
+    color: #8c8b8b;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
